@@ -1,0 +1,717 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#F7F7F7;
+}
+
+.container{
+    width: 100%;
+    height: 500px;
+background-color: rgb(27, 43, 90);
+}
+
+.nav{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+}
+.ul-1st{
+    width: 50%;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    list-style: none;  
+    padding-right: 150px;
+}
+.ul-1st img{
+    width: 25px;
+    cursor: pointer;
+}
+.ul-2nd{
+    width: 30%;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+
+}
+.nav-2{
+    display: none;
+}
+.hero-section{
+    width: 100%;
+    height: 450px;
+    background-image:url(https://i03.appmifile.com/104_operator_in/07/06/2023/3d11d23ba572a119efabbca75b1c529f.jpg?f=webp);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items:left;
+    justify-content:center;
+    flex-direction: column;
+    color: black;
+    padding-left: 150px;
+}
+.hero-section h1{
+    font-size: 32px;
+     font-weight: 700;
+}
+
+.hero-section h6{
+    font-size: 26px;
+    font-weight: 100;
+    padding-top: 10px;
+}
+.hero-section button{
+    width: 120px;
+    height: 35px;
+    background-color: black;
+    color:white;
+    border-radius: 10px;
+    margin-top: 30PX;
+    border: none;
+}
+.hero-section button:hover{
+    background-color: antiquewhite;
+}
+.media-hero{
+    display: none;
+}
+
+.mi-section{
+    width: 100%;
+    height: 450px;
+    background-image: url(./image/mb\ pic.webp);
+    background-position: center;
+    background-size: cover;
+    padding-left: 170px;
+}
+.mi-section-text h3{
+    padding-top: 23%;
+    font-size: 18px;
+    font-weight: 600;
+}
+.mi-section-text button{
+    width: 120px;
+    height: 35px;
+    background: #000;
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px; 
+    border: none;
+}
+.mi-section-text button:hover{
+    background-color: rgb(72, 70, 70);
+}
+.mi-section-hero{
+    display: none;
+}
+
+.grid-section{
+    width:100%;
+    height:900px;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+.box-a{
+    border: 1px solid black;
+    background-image: url(./image/football\ pic.webp);
+background-position: center;
+background-size: cover;
+grid-column: 1/2;
+grid-row: 1/2;
+}
+
+.box-b{
+    border: 1px solid black;
+    background-image: url(./image/sourav\ gnly.webp);
+    background-position: center;
+    background-size: cover;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+}
+.box-c{
+    border: 1px solid black;
+    background-image: url(./image/mi\ tv.webp);
+    background-position: center;
+    background-size: cover;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: center;
+    padding: 50px;
+} 
+.box-d{
+    width: 100%;
+    height: 450px;
+    background-color: aliceblue;
+    border: 1px solid black;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px;
+}
+.box-d1{
+text-align: center;
+    background-image: url(./image/mi\ laptop\ tablet.webp);
+    background-position: center;
+    background-size: cover;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    padding-top: 80px;
+
+}
+.box-d2{
+    
+    width: 100%;
+    height: 450px;
+    background-color:white;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    display: grid;
+grid-template-columns: repeat(1,1fr);
+grid-template-rows: repeat(2,1fr);
+gap: 10px;
+
+}
+.box-d2-1st{
+    width: 100%;
+    height: 100px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: center;
+    padding-top: 20px;
+}
+.box-d2-2nd{
+    width: 100%;
+    height: 300px;
+    background-image: url(./image/trimer.jfif);
+    background-position: center;
+    background-size: cover;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+
+.xiaomi-text-section{
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+    background-color:rgb(241, 236, 227);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.xiaomi-pic{
+    width: 50%;
+    height: 400px;
+    background-color: whitesmoke;
+}
+.xiaomi-pic img{
+    width: 100%;
+    height: 400px;
+
+}
+.xiaomi-text{
+    width: 50%;
+    height: 400px;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.xiaomi-text h3{
+    color:orange;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.xiaomi-text h1{
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.xiaomi-text p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+
+.xiaomi-care-service{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    background-color: rgb(241, 236, 227);
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.care{
+    width: 45%;
+    height: 400px;
+    background-color: white;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.care h1{
+    width: 100%;
+    height: 100px;
+    margin-top: 40px;
+}
+.service{
+    width: 50%;
+    height: 400px;
+background-color: rgb(236, 231, 221); ;
+/* margin-left: 20px; */
+/* margin-right: 20px; */
+}
+.care-box{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.care-a{
+    width: 30%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.care img{
+    width: 50px;
+    height: 50px;
+}
+.care a{
+    margin-top: 40px;
+}
+.care-b{
+    width: 30%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.care-c{
+    width: 30%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.service-1{
+    width: 100%;
+    height: 190px;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.service-2{
+    width: 100%;
+    height: 190px;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+} 
+.service a{
+    margin-top: 30px;
+    color: black;
+    
+}
+
+.end-page{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    background-color: #191919;
+    color: white;
+    padding-top: 30px;
+    justify-content: space-between;
+}
+.box-end{
+    width: 70%;
+    height: 450px;
+    display: flex;
+    background-color:#191919;
+    color: white;
+    justify-content: space-around;
+    list-style: none;
+    padding-left: 40px;
+}
+
+.box-end h1{
+    font-size: 16px;
+}
+
+.box-end1{
+    width: 25%;
+    height: 450px;
+    text-align: start;
+        display: flex;
+        flex-direction: column;
+justify-content: space-around;
+}
+.box-end1 h1{
+    font-size: 22px;
+}
+.box-end2{
+    width: 25%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+justify-content: space-around;
+}
+.box-end3{
+    width: 25%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 159px;
+}
+.box-end4{
+    width: 25%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+justify-content: space-around;
+padding-top: 5px;
+}
+
+.form-end{
+    width: 30%;
+    height: 450px;
+    padding-top: 40px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.site-footer{
+    width: 150px;
+    height: 100px;
+}
+.site-footer h3{
+    font-size: 18px;
+padding-left: 10px;
+
+}
+.icons{
+    width: 100px;
+    height: 80px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content:space-around; 
+    padding-top: 10px;
+}
+.form-end h3{
+    font-size: 15px;
+    padding-top: 20px;
+}
+.form-end input{
+    width: 300px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: #191919;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+.box-form{
+    width: 320px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    
+}
+.box-form h2{
+    font-size: 15px;
+    padding-left: 20px;
+}
+.box-form img{
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+
+@media (max-width:768px) {
+    .container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .nav{
+      display: none;
+        
+    }
+   .nav-2{
+      height: 70px;
+       width: 100%;
+       display: block;
+       display: flex;
+       align-self: center;
+       justify-content: space-between;
+       background-color: white;
+    }
+    .nav-ul-1{
+        height: 50px;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+        padding-right: 20px;
+       
+
+    }
+    .nav-ul-1 img{
+        height: 35px;
+        width: 35px;
+    }
+    .nav-ul-2{
+        width: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: black;
+    }
+    .nav-2 ul{
+        list-style: none;
+    }
+    .hero-section{
+        display: none;
+    }
+    .media-hero{
+        width: 100%;
+        height: 450px;
+        background-image:url(https://i03.appmifile.com/513_operator_in/07/06/2023/becdbcd8b55f22e8bae0c9fcf6ffede0.jpg?f=webp);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items:left;
+        justify-content:center;
+        flex-direction: column;
+        color: black;
+        padding-left: 150px;
+    }
+    .media-text{
+        height: 350px;
+        width: 200px;
+    }
+    .media-text h1{
+        font-size: 32px;
+         font-weight: 700;
+    }
+    
+    .media-text h6{
+        font-size: 17px;
+        font-weight: 100;
+        padding-top: 10px;
+    }
+    .media-text button{
+        width: 100px;
+        height: 35px;
+        background-color: black;
+        color:white;
+        border-radius: 10px;
+        margin-top: 30PX;
+        border: none;
+        margin-left: 30px;
+    }
+    .mwdia-text button:hover{
+        background-color: antiquewhite;
+    }
+    .mi-section{
+        display: none;
+    }
+    .mi-section{
+        max-width: 100%;
+        height: 500px;
+        background-image:url(./image/mb\ pic.webp);
+        background-position: center;
+        background-color: white;
+        background-size: contain;
+        background-repeat: no-repeat;
+        /* background-repeat: no-repeat; */
+        display: flex;
+        align-items:start;
+        justify-content:center;
+        flex-direction: column;
+        color: black;
+        padding-top: 300px;
+        /* padding-left: 150px; */
+    }
+    
+    .mi-section-text{
+        height: 350px;
+        width: 200px;
+    }
+    .grid-section{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: auto auto ;
+        grid-template-rows: 400px  400px ;
+        gap: 2px;
+      
+        /* grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr); */
+        /* display: flex;
+        flex-direction: column; */
+    }
+    .box-a{
+        width: 250px;
+        border: 1px solid black;
+        background-image: url(./image/football\ pic.webp);
+    background-position: center;
+    background-size: cover;
+   
+    
+   
+    }
+    .box-b{
+        width:100%;
+        border: 1px solid black;
+        background-image: url(./image/sourav\ gnly.webp);
+        background-position: center;
+        background-size: cover;
+        padding: 20px;
+    }
+    
+
+    .box-c{
+        width: 90%;
+        border: 1px solid black;
+        background-image: url(./image/mi\ tv.webp);
+        background-position: center;
+        background-size: cover;
+        grid-row: 2/3;
+        grid-column: 1/3;
+       
+        text-align: center;
+        padding: 50px;
+    } 
+
+    .box-d{
+        display: none;
+    }
+    .xiaomi-text-section{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .xiaomi-pic{
+        width: 100%;
+        
+    }
+    .xiaomi-text{
+        width: 100%;
+    }
+    .xiaomi-care-service{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    .care{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    .service{
+        width: 100%;
+        height: auto;
+        
+    }
+    .end-page{
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid white;
+        margin-bottom: 40px;
+
+    }
+    .box-end{
+        width: 50%;
+        height: auto;
+        flex-direction: column;
+        
+    }
+    .form-end{
+        width: 50%;
+        height: auto;
+    }
+    .box-end1{
+        width: 100%;
+        height: 350px;
+        padding-bottom: 0;
+    }
+    .box-end2{
+        width: 100%;
+        height: 350px;
+        padding-bottom: 0;
+    }
+    .box-end3{
+        width: 100%;
+        height: 350px;
+        padding-bottom: 0;
+    }
+    .box-end4{
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        
+    }
+    .box-end h1{
+        width: 120px;
+        font-size: 22px;
+    }
+    .form-end input{
+        width:150px;
+    }
+    .site-footer{
+        width: 60%;
+    }
+    .form-end h3{
+        width: 80%;
+    }
+    .box-form{
+        width: 90%;
+    }
+    
+
+    
+ 
+}
